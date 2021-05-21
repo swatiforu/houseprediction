@@ -4,9 +4,10 @@ import pickle
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.preprocessing import MinMaxScaler
 from flask import Flask, request, redirect, url_for, flash, jsonify
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
-
+CORS(app)
 @app.route('/prediction/', methods=['GET'])
 def getPredictions():
   beds = request.args['beds']
