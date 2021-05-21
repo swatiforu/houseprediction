@@ -43,4 +43,4 @@ def gethouseprice(beds, baths, size, location):
   values = scaler.transform(np.asarray([k]))
   result = regressor.predict(values)
   result = scaler2.inverse_transform(np.asarray([result]))
-  return result[0][0]
+  return str(result[0][0])
