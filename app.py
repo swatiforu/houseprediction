@@ -18,7 +18,7 @@ def getPredictions():
 def gethouseprice(beds, baths, size, location):
   beds = int(beds)
   baths = int(baths)
-  spl = size.split('_')
+  spl = size.split(' ')
   area = float(spl[0])
   if spl[1] == 'Kanal':
     area = area*20
