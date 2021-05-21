@@ -4,4 +4,4 @@ gunicorn
 sklearn
 numpy
 tensorflow-cpu
-xlrd
+openpyxl
