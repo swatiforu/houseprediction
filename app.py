@@ -25,6 +25,7 @@ def gethouseprice(beds, baths, size, location):
   locs = pd.read_excel('locs.xlsx')
   val = locs[locs['Location'] == location].Index.values[0]
   df = pd.read_excel('Data.xlsx')
+  df.drop(['Unnamed: 0'], axis = 1, inplace=True)
   unscaled_data = df.values.copy()
   X = []
   y = []
